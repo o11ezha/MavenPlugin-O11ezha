@@ -7,11 +7,36 @@
     <groupId>org.plugin</groupId>
     <artifactId>MavenPlugin</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>maven-plugin</packaging>
+    <name>Developers Team Info</name>
+    <description>Prints information about developers from POM</description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-plugin-api</artifactId>
+            <version>3.9.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-core</artifactId>
+            <version>3.9.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.maven.plugin-tools</groupId>
+            <artifactId>maven-plugin-annotations</artifactId>
+            <version>3.15.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
 
 </project>
